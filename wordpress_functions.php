@@ -1,5 +1,7 @@
 function wpt_theme_styles() {
+
 //initialize your css files here
+
 	wp_enqueue_style( 'foundation_css', get_template_directory_uri() . '/css/foundations.css');
 
 	wp_enqueue_style( 'normalize_css', get_template_directory_uri() . '/css/normalize.css');
@@ -17,7 +19,9 @@ add_action( 'wp_enqueue_scripts', 'wpt_theme_styles' );
 
 
 function wpt_theme_js() {
-//Put your javascript sources here
+
+//initialize your javascript files here
+
 	wp_enqueue_script('modernizr_js', get_template_directory_uri() . '/js/modernizr.js', '', '', false);
 	wp_enqueue_script('foundation_js', get_template_directory_uri() . '/js/foundation.js', array('jquery') , '', false);
 	wp_enqueue_script('main_js', get_template_directory_uri() . '/js/app.js', array('jquery') , 'foundation_js', false);
