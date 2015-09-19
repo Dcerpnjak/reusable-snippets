@@ -1,2 +1,2 @@
 # reusable-snippets
-Stuff I use
+Code snippets I use regulary while coding, feel free to add. 
